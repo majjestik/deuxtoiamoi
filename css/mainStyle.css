@@ -1,0 +1,472 @@
+@font-face {
+    font-family: "nasalization-rg";
+    src: url("../fonts/font/nasalization-rg.ttf");
+}
+@font-face {
+    font-family: "Amarante";
+    src: url("../fonts/font/Amarante-Regular.ttf");
+}
+@font-face {
+    font-family: "Lobster";
+    src: url("../fonts/font/Lobster.ttf");
+}
+@font-face {
+    font-family: "Lora-Regular";
+    src: url("../fonts/font/Lora-Regular.ttf");
+}
+@font-face {
+    font-family: russiafive;
+    src: url("../fonts/font/Russia\ Five.otf");
+}
+@font-face {
+    font-family: "Ubuntu-Bold";
+    src: url("../fonts/font/Ubuntu-Bold.ttf");
+}
+@font-face {
+    font-family: "Ubuntu-BoldItalic";
+    src: url("../fonts/font/Ubuntu-BoldItalic.ttf");
+}
+@font-face {
+    font-family: "Ubuntu-Regular";
+    src: url("../fonts/font/Ubuntu-Regular.ttf");
+}
+
+.nasalization {
+    font-family: nasalization-rg;
+}
+.amarante {
+    font-family: Amarante;
+}
+.lobster {
+    font-family: Lobster;
+}
+.russiafive {
+    font-family: Russia\ Five;
+}
+.ubuntu {
+    font-family: Ubuntu-Regular;
+}
+.ubuntu-bold {
+    font-family: Ubuntu-Bold;
+}
+.ubuntu-italic {
+    font-family: Ubuntu-BoldItalic;
+}
+    /* General classes */
+.underline {
+    text-decoration: underline;
+}
+.link-clean:hover {
+    text-decoration: none;
+}
+.text-grey {
+    color: #57585c;
+}
+.title-blue {
+    color: #0b74a1;
+}
+.card-img-top {
+    box-shadow: 5px 8px 15px 3px #999;
+}
+
+
+.navbgcolor {
+    background-color: #343a40;
+    /* background-color: #3d3d3d; */
+}/* 
+.navbgcolor.scrolled {
+    background-color: #343a40;
+    transition: ease-in 0.8s;
+} */
+
+h1, h2 {
+    font-family: Ubuntu-BoldItalic;
+}
+.card-title {
+    text-align: center; 
+    font-family: Ubuntu-Bold;
+}
+.card-footer {
+    border: none;
+}  
+.cards-div {
+    display: flex; 
+    flex-wrap: wrap; 
+    flex-direction: row; 
+    justify-content: space-around;
+}
+
+/*-------------------------------
+    FORM ZONE STARTS HERE
+-------------------------------*/
+form{
+    border: 1px solid #999;
+    animation-name: formAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes formAnimation {
+    0% {
+        border-radius: 0 0 0 0;
+    }
+    25% {
+        border-radius: 65px 0 0 0;
+    }
+    50% {
+        border-radius: 65px 65px 0 0;
+    }
+    75% {
+        border-radius: 65px 65px 65px 0;
+    }
+    100% {
+        border-radius: 65px 65px 65px 65px;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    /* NAVBAR */
+
+
+    /* COVER IMAGE */
+    #cover_img {
+        width: 100%;
+        height: 270px;
+        background-image: url('../images/bg2.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .welcome {
+        position: absolute;
+        top: 35%;
+        left: 2%;
+    }
+    
+
+    /* STYLE FOOTER */
+    footer h5 {
+        font-family: Ubuntu-Bold;
+        font-size: 15px;
+    }
+    .cards-div .photo-article {
+        width: 300px;
+        height: 230px;
+    }
+    #offres-card .card {
+        box-shadow: 0px 0px 2px 1px #999;
+    }
+    .rounded-icons {
+        border: 1px solid #dcdcdc;
+        border-radius: 50%;
+        width: 50px;
+    }
+    .card-title {
+        font-size: 18px;
+        margin-left: 25px;
+    }
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 767px) {
+
+    /* COVER IMAGE */
+    #cover_img {
+        width: 100%;
+        height: 350px;
+        background-image: url('../images/bg2.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .welcome {
+        position: absolute;
+        top: 35%;
+        left: 5%;
+    }
+
+    /* STYLE FOOTER */
+    footer h5 {
+        font-family: Ubuntu-Bold;
+        font-size: 15px;
+    }
+    .cards-div .photo-article {
+        width: 300px;
+        height: 230px;
+    }
+    #offres-card .card {
+        box-shadow: 0px 0px 2px 1px #999;
+        width: 450px;
+        margin: 0 auto;
+    }
+    .rounded-icons {
+        border: 1px solid #dcdcdc;
+        border-radius: 50%;
+        width: 60px;
+    }
+    .card-title {
+        font-size: 20px;
+        margin-left: 25px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+    /* NAVBAR */
+    #logo {
+        width: 180px;
+    }
+    .flags {
+        width: 20px;
+    }
+    .nav-tit {
+        font-size: 13px;;
+    }
+
+    /* COVER IMAGE */
+    #cover_img {
+        width: 100%;
+        height: 380px;
+        background-image: url('../images/bg2.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .welcome {
+        position: absolute;
+        top: 35%;
+        left: 12%;
+    }
+
+    /* STYLE FOOTER */
+    footer h5 {
+        font-family: Ubuntu-Bold;
+        font-size: 15px;
+    }
+    .cards-div .photo-article {
+        width: 260px;
+        height: 230px;
+    }
+    #offres-card .card {
+        box-shadow: 0px 0px 2px 1px #999;
+        height: 360px;
+    }
+    .rounded-icons {
+        border: 1px solid #dcdcdc;
+        border-radius: 50%;
+        width: 45px;
+    }
+    .card-title {
+        font-size: 17px;
+        margin-left: 25px;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 991px) {
+    /* NAVBAR */
+    #logo {
+        width: 200px;
+    }
+    .flags {
+        width: 20px;
+    }
+    .nav-tit {
+        font-size: 14px;;
+    }
+
+    /* COVER IMAGE */
+    #cover_img {
+        width: 100%;
+        height: 400px;
+        background-image: url('../images/bg2.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .welcome {
+        position: absolute;
+        top: 35%;
+        left: 16%;
+    }
+
+    /* STYLE FOOTER */
+    footer h5 {
+        font-family: Ubuntu-Bold;
+        font-size: 17px;
+    }
+    .cards-div .photo-article {
+        width: 260px;
+        height: 220px;
+    }
+    #offres-card .card {
+        box-shadow: 0px 0px 2px 1px #999;
+        height: 320px;
+    }
+    .rounded-icons {
+        border: 1px solid #dcdcdc;
+        border-radius: 50%;
+        width: 50px;
+    }
+    .card-title {
+        font-size: 16px;
+        margin-left: 25px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+
+    /* COVER IMAGE */
+    #cover_img {
+        width: 100%;
+        height: 450px;
+        background-image: url('../images/bg2.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .welcome {
+        position: absolute;
+        top: 35%;
+        left: 18%;
+    }
+
+    /* STYLE FOOTER */
+    footer h5 {
+        font-family: Ubuntu-Bold;
+        font-size: 17px;
+    }
+    .cards-div .photo-article {
+        width: 260px;
+        height: 220px;
+    }
+    #offres-card .card {
+        box-shadow: 0px 0px 2px 1px #999;
+        height: 410px;
+    }
+    .rounded-icons {
+        border: 1px solid #dcdcdc;
+        border-radius: 50%;
+        width: 50px;
+    }
+    .card-title {
+        font-size: 16px;
+        margin-left: 5px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1099px) {
+
+    /* COVER IMAGE */
+    #cover_img {
+        width: 100%;
+        height: 450px;
+        background-image: url('../images/bg2.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .welcome {
+        position: absolute;
+        top: 35%;
+        left: 22%;
+    }
+
+    /* STYLE FOOTER */
+    footer h5 {
+        font-family: Ubuntu-Bold;
+        font-size: 17px;
+    }
+    .cards-div .photo-article {
+        width: 260px;
+        height: 220px;
+    }
+    #offres-card .card {
+        box-shadow: 0px 0px 2px 1px #999;
+        height: 400px;
+    }
+    .rounded-icons {
+        border: 1px solid #dcdcdc;
+        border-radius: 50%;
+        width: 50px;
+    }
+    .card-title {
+        font-size: 16px;
+        margin-left: 25px;
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1199px) {
+
+    /* COVER IMAGE */
+    #cover_img {
+        width: 100%;
+        height: 480px;
+        background-image: url('../images/bg2.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .welcome {
+        position: absolute;
+        top: 35%;
+        left: 22%;
+    }
+
+    /* STYLE FOOTER */
+    footer h5 {
+        font-family: Ubuntu-Bold;
+        font-size: 17px;
+    }
+    .cards-div .photo-article {
+        width: 260px;
+        height: 220px;
+    }
+    #offres-card .card {
+        box-shadow: 0px 0px 2px 1px #999;
+        height: 350px;
+    }
+    .rounded-icons {
+        border: 1px solid #dcdcdc;
+        border-radius: 50%;
+        width: 50px;
+    }
+    .card-title {
+        font-size: 16px;
+        margin-left: 25px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    /* COVER IMAGE */
+    #cover_img {
+        width: 100%;
+        height: 584px;
+        background-image: url('../images/bg2.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .welcome {
+        position: absolute;
+        top: 38%;
+        left: 25%;
+    }
+
+    /* STYLE FOOTER */
+    footer h5 {
+        font-family: Ubuntu-Bold;
+        font-size: 18px;
+    }
+    .cards-div .photo-article {
+        width: 300px;
+        height: 230px;
+    }
+    #offres-card .card {
+        box-shadow: 0px 0px 2px 1px #999;
+        height: 350px;
+    }
+    .rounded-icons {
+        border: 1px solid #dcdcdc;
+        border-radius: 50%;
+        width: 75px;
+    }
+    .card-title {
+        font-size: 16px;
+        margin-left: 25px;
+    }
+}
