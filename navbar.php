@@ -51,12 +51,20 @@
             </ul>
 
             <div class="col-md-2 col-5 mr-0">
-                <a href="index.php" class="link-clean">
-                    <img src="images/fr-sm.png" alt="Drapeau Français" width="30px" class="img-fluid flags">
+                <a href="index.html" class="link-clean">
+                    <img src="images/fr-sm.png" alt="Drapeau Français" 
+                        width="30px" class="img-fluid flags" 
+                        data-toggle="tooltip" data-placement="bottom" 
+                        title="Français"
+                    >
                 </a>
                 <span class="text-secondary"> | </span> 
                 <a href="#" class="link-clean">
-                    <img src="images/ma-sm.png" alt="Drapeau Malgache" width="30px" class="img-fluid flags">
+                    <img src="images/ma-sm.png" alt="Drapeau Malgache" 
+                        width="30px" class="img-fluid flags"
+                        data-toggle="tooltip" data-placement="bottom" 
+                        title="Malagasy"
+                    >
                 </a>
             </div>  
 
