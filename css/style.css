@@ -69,6 +69,16 @@
     box-shadow: 5px 8px 15px 3px #999;
 }
 
+    /* NAVBAR GENERAL STYLING */
+.navbar {
+    background-color: #a504ff;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    border-bottom: 2px solid #fff;
+    padding-top: 0;
+    transition: 500ms;
+}
+
 
 .navbgcolor {
     background-color: #a504ff;
@@ -94,6 +104,11 @@ h1, h2 {
     flex-wrap: wrap; 
     flex-direction: row; 
     justify-content: space-around;
+}
+
+    /* FOOTER GENERAL STYLING */
+footer .list-unstyled a:hover {
+    color: white;
 }
 
 /*-------------------------------
@@ -122,6 +137,27 @@ form{
     100% {
         border-radius: 65px 65px 65px 65px;
     }
+}
+
+/* Signup page */
+
+#photo {
+    display: none;
+}
+
+.formImages {
+    display: block;
+    width: 60%;
+    margin: 10px auto;
+    border-radius: 50%;
+    border: 1px dashed #a504ff;
+    cursor: pointer;
+}
+
+.photo_text {
+    color: #999;
+    position: relative;
+    top: 0px;
 }
 
 

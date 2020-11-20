@@ -33,7 +33,7 @@
         }
     </style>
 
-    <title>Mot de passe oublié - Deuxtoiamoi</title>
+    <title>Contact - Deuxtoiamoi</title>
 </head>
 <body>
 
@@ -110,26 +110,63 @@
 
     <div class="container-fluid my-5">
         <div class="row">
-            <div class="col-md-8 offset-md-2">
-                <form action="fr_login.html" method="post" class="amarante mb-5 mt-2 p-md-5 p-4" id="createLandlordForm">
-                    <marquee behavior="" direction="left" class="mb-3 text-danger aclonica">Veuillez saisir votre Email !</marquee>
+            <div class="col-md-10 offset-md-1 ubuntu">
+                <h1 class="text-uppercase text-center mb-5">contactez-nous</h1>
 
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <form action="" class="py-5 px-3">
+                            <div class="form-row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="sujet">SUJET</label>
+                                        <select id="sujet" class="form-control" name="sujet">
+                                            <option>CHOISIR...</option>
+                                            <option value="">Je rencontre un problème lors de mon inscription</option>
+                                            <option value="">Je souhaite signaler un problème sur le site</option>
+                                            <option value="">Je souhaite faire une rencontre sur votre site</option>
+                                            <option value="">Autres...</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Nom</label>
+                                        <input type="text" class="form-control" placeholder="Entrez votre nom">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Email</label>
+                                        <input type="email" class="form-control" placeholder="Entrez votre adresse email">
+                                    </div>
 
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" class="form-control"
-                         placeholder="Entrez votre adresse e-mail"
-                        >
-                        <span class="glyphicon glyphicon-envelope"></span>
+                                </div><!-- first col end -->
+
+                                <div class="col-md-6 text-center">
+                                    <h6>En attente du code JS</h6>
+                                </div><!-- 2nd col end -->
+
+                            </div>
+
+                            <button class="btn btn-block btn-primary nasalization">
+                                <span class="glyphicon glyphicon-send"></span> ENVOYER
+                            </button>
+
+                        </form>
                     </div>
+                </div><!-- inside row end -->
 
-                    <br>
-                    
-                    <button class="btn btn-dark btn-block nasalization" type="submit" name="submit">
-                        <span class="glyphicon glyphicon-send"></span> ENVOYER
-                    </button>
-                    
-                </form>
+                <h2 class="text-center mt-5 mb-3">SUIVEZ-NOUS</h2>
+
+                <div class="text-center">
+                    <a href="www.facebook.com/deuxtoiamoioff" class="link-clean">
+                        <img src="images/Facebook.png" alt="Facebook icon" class="img-fluid" width="50px">
+                    </a>
+                    <a href="#" class="link-clean">
+                        <img src="images/Instagram.png" alt="Instagram icon" class="img-fluid" width="50px">
+                    </a>
+                    <a href="#" class="link-clean">
+                        <img src="images/Twitter.png" alt="Twitter icon" class="img-fluid" width="50px">
+                    </a>
+                </div>
+
             </div>
         </div>
     </div>

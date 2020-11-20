@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS links: custom and bootstrap -->
-    <link rel="stylesheet" href="css/mainStyle.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/glyphs.css">
     <link rel="stylesheet" href="css/aos.css">
@@ -33,11 +33,11 @@
         }
     </style>
 
-    <title>Se connecter - Deuxtoiamoi</title>
+    <title>S'inscrire - Deuxtoiamoi</title>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-md navbar-dark navbgcolor sticky-top amarante" style="background-color: #a50fff;">
+<nav class="navbar navbar-expand-md navbar-dark navbgcolor sticky-top amarante">
         
         <!-- LOGO SECTION -->
         <a href="#" class="">
@@ -60,9 +60,9 @@
                         A PROPOS DE NOUS
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Qui Sommes Nous?</a>
-                        <a class="dropdown-item" href="#">Contacts</a>
-                        <a class="dropdown-item" href="#">remerciements</a>
+                        <a class="dropdown-item" href="a_propos.html">Qui Sommes Nous?</a>
+                        <a class="dropdown-item" href="contact.html">Contacts</a>
+                        <a class="dropdown-item" href="remerciements.html">remerciements</a>
                     </div>
                 </li>
                 <li class="nav-item ml-lg-3 nav-tit">
@@ -78,7 +78,7 @@
                         title="Français"
                     >
                 </a>
-                <span class="text-secondary"> | </span> 
+                
                 <a href="#" class="link-clean">
                     <img src="images/ma-sm.png" alt="Drapeau Malgache" 
                         width="30px" class="img-fluid flags"
@@ -114,7 +114,16 @@
                 <form action="fr_login.html" method="post" class="amarante mb-5 mt-2 p-md-5 p-4" id="createLandlordForm">
                     <marquee behavior="alternate" direction="left" class="mb-3 text-danger aclonica">Tous les champs sont obligatoires !</marquee>
                     <br><br>
-
+                    
+                    <div class="form-row my-2">
+                        <div class="form-group col-md-4 offset-md-4 text-center">
+                            <img src="images/image_placeholder.png" id="photoDisplay" 
+                             onclick="triggerClick()" class="img-fluid formImages"
+                            >
+                            <input type="file" name="photo" id="photo" onchange="displayImage(this)">
+                            <p class="photo_text" id="photo_text">sélectionner votre photo</p>
+                        </div>
+                    </div>
                     <div class="form-row">
                         <div class="col-md-6">
                             <div class="form-group">
@@ -141,6 +150,8 @@
                         <label for="password">Mot de Passe</label>
                         <input type="password" name="password" class="form-control" id="pwd" placeholder="************">
                         <span class="glyphicon glyphicon-lock" id="lock" onclick="showPwd()"></span>
+
+                        <input type="password" name="password" class="form-control" id="pwd" placeholder="Saisir encore son mot de passe">
                     </div>
                     <div class="row">
                         <div class="col-md-6">
@@ -179,6 +190,9 @@
                                     <option value="celibataire">Célibataire</option>
                                     <option value="couple">En Couple</option>
                                     <option value="marie">Marié(e)</option>
+                                    <option value="separe">Séparé(e)</option>
+                                    <option value="divorce">Divorcé(e)</option>
+                                    <option value="veuf">Veuf(ve)</option>
                                 </select>
                             </div>
                         </div>
@@ -197,7 +211,7 @@
                     <div class="form-row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="">Situation</label>
+                                <label for="">Pays</label>
                                 <select name="" id="" class="form-control">
                                     <option value="AF">Afghanistan</option>
                                     <option value="AX">Åland Islands</option>
@@ -515,13 +529,13 @@
 
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#">Conseils</a>
+                            <a href="conseil.html">Conseils</a>
                         </li>
                         <li>
-                            <a href="#">Contact</a>
+                            <a href="contact.html">Contact</a>
                         </li>
                         <li>
-                            <a href="#">Foire aux Questions</a>
+                            <a href="faq.html">Foire aux Questions</a>
                         </li>
                     </ul>
                 </div>

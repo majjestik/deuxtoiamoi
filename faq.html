@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS links: custom and bootstrap -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/glyphs.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <style type="text/css">
+        .dropdown-item:hover {
+            background-color: #f63272;
+            color: #fff;
+        }
+        .dropdown-item {
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        .navbar-brand {
+            width: 250px;
+        }
+        .glyphicon-lock, .glyphicon-envelope {
+            position: relative;
+            top: -28px;
+            left: 92%;
+            cursor: pointer;
+        }
+        .accordion-wrapper button {
+            text-decoration: none;
+            font-family: Ubuntu-BoldItalic;
+        }
+        .accordion-wrapper button:hover {
+            text-decoration: none;
+            color: #a504ff;
+            font-family: Ubuntu-BoldItalic;
+        }
+    </style>
+
+    <title>FAQ - Deuxtoiamoi</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark sticky-top amarante">
+        
+        <!-- LOGO SECTION -->
+        <a href="#" class="">
+            <img src="images/logo.png" class="img-fluid navbar-brand" id="logo" alt="logo">
+        </a>
+        
+        <!-- COLLAPSE BUTTON -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- COLLAPSE SECTION -->
+        <div class="collapse navbar-collapse " id="myNavbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item nav-tit">
+                    <a class="nav-link" href="index.html" style="color: #fff;">ACCEUIL</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle nav-tit" style="color: #fff;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        A PROPOS DE NOUS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="a_propos.html">Qui Sommes Nous?</a>
+                        <a class="dropdown-item" href="contact.html">Contacts</a>
+                        <a class="dropdown-item" href="remerciements.html">remerciements</a>
+                    </div>
+                </li>
+                <li class="nav-item ml-lg-3 nav-tit">
+                    <a class="nav-link" href="#" style="color: #fff;">BLOG</a>
+                </li>
+            </ul>
+
+            <div class="col-md-2 col-5 mr-0">
+                <a href="index.html" class="link-clean">
+                    <img src="images/fr-sm.png" alt="Drapeau Français" 
+                        width="30px" class="img-fluid flags" 
+                        data-toggle="tooltip" data-placement="bottom" 
+                        title="Français"
+                    >
+                </a>
+                
+                <a href="#" class="link-clean">
+                    <img src="images/ma-sm.png" alt="Drapeau Malgache" 
+                        width="30px" class="img-fluid flags"
+                        data-toggle="tooltip" data-placement="bottom" 
+                        title="Malagasy"
+                    >
+                </a>
+            </div> 
+
+            <ul class="navbar-nav ml-auto my-3  my-md-0">
+                <li class="nav-item mb-2 mb-md-0">
+                    <a href="signup.html" class=" link-clean">
+                        <button class="btn btn-danger">S'inscrire</button>
+                    </a>
+                </li>
+                <li class="nav-item ml-md-3 mr-1 mb-2 mb-md-0">
+                    <a href="login.html" class=" link-clean">
+                        <button class="btn btn-outline-light">Se connecter</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+
+
+        <!-- MAIN CONTENT -->
+
+    <div class="container-fluid my-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h1 class="text-uppercase text-center mb-3">Foire aux Questions</h1>
+                <p class="text-center">Toutes les questions que vous pouvez vous poser, et plus encore.</p>
+
+                <div class="accordion-wrapper py-5">
+                    
+                    <!-- FAQ Accordion -->
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Qui peut s'inscrire sur <strong>deuxtoiamoi.com ?</strong> 
+                                </button>
+                                </h5>
+                            </div>
+                      
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    Le site <strong>deuxtoiamoi.com</strong> est ouvert à toute personne âgé de 21 ans et plus.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Comment se déroule l'inscription ? 
+                                </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">
+                                    Après avoir rempli le formulaire d'inscription, votre profil est validé manuellement dans un délai de 72 heures.
+                                    Entre temps vous ne serez pas en mesure d'accéder aux profils. Si votre profil est validé après la vérification,
+                                    vous êtes notifié par email.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Tous les profils sont-ils vraiment validés ? 
+                                </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">
+                                    Oui, <strong>deuxtoiamoi.com</strong> s'assure que tous les profils soient validés manuellement. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingfour">
+                                <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                                    Mes données personnelles sont-elles visibles ? 
+                                </button>
+                                </h5>
+                            </div>
+                            <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#accordion">
+                                <div class="card-body">
+                                    Non, les autres membres ne peuvent pas voir vos données personnelles (nom, prénom, téléphone, email...). 
+                                    Seul vous choisissez à qui vous décidez de communiquer vos données personnelles. 
+                                    Nous vous invitons à consulter notre charte de bonne pratique pour des conseils sur l'utilisation 
+                                    de notre site.  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingfive">
+                                <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                                    Le site est-il gratuit ? 
+                                </button>
+                                </h5>
+                            </div>
+                            <div id="collapsefive" class="collapse" aria-labelledby="headingfive" data-parent="#accordion">
+                                <div class="card-body">
+                                    Oui, <strong>deuxtoiamoi.com</strong> s'engage a ce que toutes les fonctionnalités qu'offre 
+                                    le site soit gratuites. Jamais <strong>deuxtoiamoi.com</strong> ne vous demandera votre carte 
+                                    de crédit pour quoi que ce soit. . 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingsix">
+                                <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+                                    Deuxtoiamoi.com est-il ouvert à l'international ? 
+                                </button>
+                                </h5>
+                            </div>
+                            <div id="collapsesix" class="collapse" aria-labelledby="headingsix" data-parent="#accordion">
+                                <div class="card-body">
+                                    ... 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingseven">
+                                <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven">
+                                     ? 
+                                </button>
+                                </h5>
+                            </div>
+                            <div id="collapseseven" class="collapse" aria-labelledby="headingseven" data-parent="#accordion">
+                                <div class="card-body">
+                                    Oui, <strong>deuxtoiamoi.com</strong> s'assure que tous les profils soient validés manuellement. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingeight">
+                                <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseeight" aria-expanded="false" aria-controls="collapseeight">
+                                     ? 
+                                </button>
+                                </h5>
+                            </div>
+                            <div id="collapseeight" class="collapse" aria-labelledby="headingeight" data-parent="#accordion">
+                                <div class="card-body">
+                                    Oui, <strong>deuxtoiamoi.com</strong> s'assure que tous les profils soient validés manuellement. 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- wrapper end -->
+
+            </div><!-- 1st col end -->
+        </div><!-- main row end -->
+    </div><!-- main container end -->
+
+    <!-- FOOTER -->
+    <footer class="pt-4"  style="background-color: #263238; color: #ffffff;">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 mx-auto text-center">
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Deuxtoiamoi</h5>
+                    <p>
+                        <b>Deuxtoiamoi.com</b> est le site de rencontre qui permet à des milliers de célibataires d'ici et d'ailleurs de 
+                        trouver le bonheur facilement et gratuitement. <br>
+                    </p>
+
+                    <h6>SUIVEZ-NOUS :</h6>
+
+                    <p>
+                        <a href="#"><img src="images/facebook-white.png" alt="facebook" class="img-fluid mx-2" style="width: 35px;"></a>
+                        <a href="#"><img src="images/twitter-white.png" alt="twitter" class="img-fluid mx-2" style="width: 35px;"></a>
+                        <a href="#"><img src="images/pinterest-white.png" alt="pinterest" class="img-fluid mx-2" style="width: 35px;"></a>
+                    </p>
+                </div>
+
+                <!-- Colonne 2 -->
+                <div class="col-md-3 mx-auto text-center">
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Liens</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#">S'inscrire</a>
+                        </li>
+                        <li>
+                            <a href="#">Se Connecter</a>
+                        </li>
+                        <li>
+                            <a href="#">Mot de passe oublié</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Colonne 3-->
+                <div class="col-md-3 mx-auto text-center">
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Support</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="conseil.html">Conseils</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                        <li>
+                            <a href="faq.html">Foire aux Questions</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Colonne 4 -->
+                <div class="col-md-3 mx-auto text-center">
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">A Propos de nous</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#">Conditions d'utilisation</a>
+                        </li>
+                        <li>
+                            <a href="#">Mentions légales</a>
+                        </li>
+                        <li>
+                            <a href="#">Régles de confidentialité</a>
+                        </li>
+                        <li>
+                            <a href="#">Cookies</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        
+        <hr>
+
+        <!-- Call to action -->
+        <ul class="list-unstyled list-inline text-center py-2">
+        <li class="list-inline-item">
+            <h5 class="mb-1">Inscrivez-vous gratuitement dès maintenant</h5>
+        </li>
+        <li class="list-inline-item">
+            <a href="#" class="btn btn-outline-danger" 
+                style="
+                    border-radius: 50px; 
+                    width: 150px; 
+                    border-width: 2px;
+                    font-weight: bold;
+                "
+            >
+                S'inscrire!
+            </a>
+        </li>
+        </ul>
+
+        <!-- Copyright -->
+        <div class="text-center py-3" style="background-color: #1e282d; color: #8ea7a9;">
+            © 2020 DeuxToiaMOI. All rights reserved. 
+        </div>
+
+    </footer>
+
+
+
+
+    <!-- JS Scripts -->
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/style.js"></script>
+</body>
+</html>

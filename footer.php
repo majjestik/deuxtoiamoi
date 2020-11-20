@@ -51,13 +51,13 @@
 
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#">Conseils</a>
+                            <a href="conseil.html">Conseils</a>
                         </li>
                         <li>
-                            <a href="#">Contact</a>
+                            <a href="contact.html">Contact</a>
                         </li>
                         <li>
-                            <a href="#">Foire aux Questions</a>
+                            <a href="faq.html">Foire aux Questions</a>
                         </li>
                     </ul>
                 </div>
